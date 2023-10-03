@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin: 0 auto;
+}
+
+.music-info {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.play {
+    background-image: url('play.png');
+    background-size: cover;
+    width: 50px;
+    height: 40px;
+}
+
+.pause {
+    background-image: url('pause.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.volume {
+    background-image: url('volume.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+#seek-bar,
+#volume-bar {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.playlist {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.playlist li {
+    cursor: pointer;
+    padding: 8px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.playlist li:hover {
+    background-color: #555;
+}
+
+.playlist li.active {
+    font-weight: bold;
+    color: #FFD700; /* Yellow color for the active song */
+}
+
+
+
+.watermark {
+    position: absolute;
+    width: 250px;
+    bottom: 10px;
+    right: 600px;
+    color: antiquewhite;
+}
